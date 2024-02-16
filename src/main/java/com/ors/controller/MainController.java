@@ -21,6 +21,7 @@ import com.ors.model.Jobs;
 import com.ors.model.PasswordReset;
 import com.ors.model.ResumeDetails;
 import com.ors.model.User;
+import com.ors.service.MailSenderService;
 import com.ors.service.jobsService;
 import com.ors.service.resumedetailsService;
 import com.ors.service.userService;
@@ -38,6 +39,9 @@ public class MainController {
 	
 	@Autowired
 	HttpSession httpsession;
+	
+	@Autowired
+	MailSenderService mailSenderService;
 
 	@GetMapping
 	public String home()
@@ -66,6 +70,7 @@ public class MainController {
 	@RequestMapping(value = "add", method = RequestMethod.POST)
 	public String register(@ModelAttribute("u") User u,ModelMap model) {
 		userservice.saveUser(u);
+		    mailSenderService.sendEmailregistration("abhisd2000@gmail.com", "Registration to ORS", "Registration Sucessfully Done.....",u.getUsername(),u.getPassword());
 			model.put("registerMsg", "User registered successfully");
 		return "Afterregister";
 	}
@@ -77,6 +82,7 @@ public class MainController {
 		model.put("um", a);
 		if(user!=null) {		
 			s.setAttribute("id", user);
+			mailSenderService.sendEmaillogin("abhisd2000@gmail.com", "login to ORS", "Login Sucessfully Done.....");
 				return "user";
 		}else{
 			model.put("errorMsg", "Invalid username or password");

@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Job Seeker Registration</title>
-<style>
+<title>Recuiter Login</title>
 
+<style>
 .toolbar {
-  background-color: #333; /* Change this to the background color you want for the toolbar */
-  color: #fff; /* Change this to the font color you want for the toolbar */
-  padding: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	background-color: #333;
+	/* Change this to the background color you want for the toolbar */
+	color: #fff;
+	/* Change this to the font color you want for the toolbar */
+	padding: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .toolbar button {
@@ -29,11 +31,12 @@
 	background-color: #0069d9;
 	/* Change this to the background color you want for the button on hover */
 }
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-input[type=text], input[type=password],input[type=email] {
+input[type=text], input[type=password] {
 	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
@@ -74,41 +77,34 @@ img.avatar {
 	border: 1px solid #ddd;
 	border-radius: 5px;
 }
-function add(username) {
-  var key = event.keyCode;
-  return ((key >= 65 && key <= 90) || key == 8);
-};
-
 </style>
 </head>
 <body>
-
 	<div class="toolbar">
 		<h1>Welcome To Jobs.Com</h1>
 		<a href="gohome"><button type="submit">Home</button></a>
-	</div>
-	<div class="imgcontainer">
-		<img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
-		<h2>JobSeeker Registration</h2>
+		<a href="requietrregister"><button type="submit">Register</button></a>
 	</div>
 
-	<div class="container">
-		<h2>Job Seeker Registration</h2>
-		<form action="add" method="POST">
-			
-				<label for="name">User name:</label> 
-				<input type="text" pattern="[A-Z a-z]+" name="username" placeholder="UserName"  minlength="5" required>
-			
-			
-				<label for="email">Email:</label> 
-				<input type="email"  name="email" placeholder="abc@gmail.com" minlength="0" required>
-			
-			
-				<label for="password">Password:</label> 
-				<input type="password"  name="password" placeholder="password" minlength="8" required>
-			
-			   <button type="submit">Register</button>
+	<div>
+		<form action="recuiterlogin" method="post">
+			<div class="imgcontainer">
+				<img src="https://www.w3schools.com/howto/img_avatar2.png"
+					alt="Avatar" class="avatar">
+				<h2>Recuiter Login</h2>
+				<h2>${errorMsg}</h2>
+			</div>
+
+
+			<div class="container">
+				<label><b>Email</b></label> <input type="text"
+					placeholder="Enter Email" name="email" required> <label><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="password"
+					required> 
+				<button type="submit">Login</button>
+			</div>
 		</form>
 	</div>
+
 </body>
 </html>

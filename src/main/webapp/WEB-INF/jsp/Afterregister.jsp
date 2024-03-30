@@ -14,6 +14,6 @@
 	</c:if> 
 	<%-- <h2>${registerMsg}</h2> --%>
 	<h2>Please click login</h2>
-	<a href="login"><button type="submit">Login</button></a>
+	<a href="afterregister"><button type="submit">Login</button></a>
 </body>
 </html>

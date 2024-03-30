@@ -97,8 +97,8 @@ img.avatar {
 
 
 			<div class="container">
-				<label><b>User name</b></label> <input type="text"
-					placeholder="Enter Username" name="Username" required> <label><b>Password</b></label>
+				<label><b>Email</b></label> <input type="text"
+					placeholder="Enter Email" name="email" required> <label><b>Password</b></label>
 				<input type="password" placeholder="Enter Password" name="Password"
 					required> 
 				<button type="submit">Login</button>

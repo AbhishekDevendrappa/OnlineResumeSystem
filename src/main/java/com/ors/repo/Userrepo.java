@@ -8,8 +8,8 @@ import com.ors.model.User;
 @Repository
 public interface Userrepo extends CrudRepository<User ,Integer> {
      
-	@Query("from User where Username=:Username and Password=:Password")
-	public User getbyuser(String Username, String Password);
+	@Query("from User where email=:email and Password=:Password")
+	public User getbyuser(String email, String Password);
 
 	public User findByusername(String username);
 

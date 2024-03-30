@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Job Seeker Login</title>
+<title>Admin Login</title>
 
 <style>
 .toolbar {
@@ -90,7 +90,7 @@ img.avatar {
 			<div class="imgcontainer">
 				<img src="https://www.w3schools.com/howto/img_avatar2.png"
 					alt="Avatar" class="avatar">
-				<h2>JobSeeker Login</h2>
+				<h2>Admin Login</h2>
 				<h2>${errorMsg}</h2>
 			</div>
 

@@ -15,10 +15,12 @@ public class Jobs {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer slno;
+	private String company;
 	private String jobtitle;
 	private String jobdescription;
 	private String joblocation;
 	private String jobtype;
+	
 	public Integer getSlno() {
 		return slno;
 	}

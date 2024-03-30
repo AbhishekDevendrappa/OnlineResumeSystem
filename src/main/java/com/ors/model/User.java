@@ -14,6 +14,22 @@ public class User {
 	private String username;
 	private String email;
 	private String password;
+	
+	public User(Integer slno, String username, String email, String password, Long number) {
+		super();
+		this.slno = slno;
+		this.username = username;
+		this.email = email;
+		this.password = password;
+		this.number = number;
+	}
+	public Long getNumber() {
+		return number;
+	}
+	public void setNumber(Long number) {
+		this.number = number;
+	}
+	private Long number;
 	public Integer getSlno() {
 		return slno;
 	}
@@ -38,13 +54,7 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public User(Integer slno, String username, String email, String password) {
-		super();
-		this.slno = slno;
-		this.username = username;
-		this.email = email;
-		this.password = password;
-	}
+	
 	public User() {
 		super();
 		// TODO Auto-generated constructor stub

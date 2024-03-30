@@ -16,8 +16,8 @@ public class userService {
 		userrepo.save(u);
 	}
 
-	public User getUser(String username, String password) {
-		return userrepo.getbyuser(username, password);
+	public User getUser(String email, String password) {
+		return userrepo.getbyuser(email, password);
 	}
 	
 	public User getUserById(Integer id) {

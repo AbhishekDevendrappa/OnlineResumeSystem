@@ -66,10 +66,11 @@ a {
 </head>
 <body  align="center">
  <div class="toolbar">
-    <h1>Jobs.Com</h1>
+    <h1>Well Come to Jobs.Com</h1>
     
     <a href="alogin"><button type="submit">Admin Login</button></a>
 	<a href="ulogin"><button type="submit">User Login</button></a>
+	<a href="rlogin"><button type="submit">Recuiter Login</button></a>
     
     
     </div>

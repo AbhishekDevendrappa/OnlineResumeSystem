@@ -105,7 +105,7 @@ a:hover {
 <body bgcolor="#f0f6ff" align="center">
 
 <div class="toolbar">
-    <h1>Welcome To Online Resume System</h1>
+    <h1>Jobs.Com</h1>
      <h2>${um}</h2>
     <a href="loglout"><button type="submit">Logout</button></a>
     </div>

@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Job Seeker Registration</title>
+<title>Job Seeker Login</title>
+
 <style>
 .toolbar {
 	background-color: #333;
@@ -35,7 +36,7 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-input[type=text], input[type=password], input[type=email] {
+input[type=text], input[type=password] {
 	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
@@ -79,44 +80,31 @@ img.avatar {
 </style>
 </head>
 <body>
-
 	<div class="toolbar">
-		<h1>Welcome To Jobs.Com</h1>
+		<h1>Welcome To Jobs.Com	</h1>
 		<a href="gohome"><button type="submit">Home</button></a>
 	</div>
-	<div class="imgcontainer">
-		<img src="https://www.w3schools.com/howto/img_avatar2.png"
-			alt="Avatar" class="avatar">
-		<h2>JobSeeker Registration</h2>
-	</div>
-<h2 id="error" style="text-align: center;"></h2>
-	<div class="container">
-		<h2>Job Seeker Registration</h2>
-		<form action="change" method="post" onsubmit="return(validatePassword())">
-			<h2>${errorMsg}</h2>
 
-			<label>User name:</label> 
-			    <input type="text" name="Username" placeholder="UserName" minlength="8" required> 	
-			    
-			<label>Password:</label>
-			    <input type="password" name="newpassword" placeholder="Password" id="password" minlength="0" required> 
-			        
-			<label>Confirm Password:</label> 
-				<input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirmpassword" minlength="0" required>
+	<div>
+		<form action="adminlogin" method="post">
+			<div class="imgcontainer">
+				<img src="https://www.w3schools.com/howto/img_avatar2.png"
+					alt="Avatar" class="avatar">
+				<h2>JobSeeker Login</h2>
+				<h2>${errorMsg}</h2>
+			</div>
 
-			<button type="submit">Register</button>
+
+			<div class="container">
+				<label><b>User name</b></label> <input type="text"
+					placeholder="Enter AdminName" name="Adminname" required> 
+					<label><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="Password"
+					required> 
+				<button type="submit">Login</button>
+			</div>
 		</form>
 	</div>
-	<script>
-		    function validatePassword() {
-			var password = document.getElementById("password").value;
-			var confirmPassword = document.getElementById("confirmpassword").value;
-			if (password != confirmPassword) {
-				document.getElementById("error").innerHTML = "Passwords do not match!";
-				return false;
-			}
-			return true;
-		}
-	</script>
+
 </body>
 </html>

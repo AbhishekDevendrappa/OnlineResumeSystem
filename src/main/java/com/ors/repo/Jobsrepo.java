@@ -11,7 +11,7 @@ import com.ors.model.Jobs;
 @Repository
 public interface Jobsrepo extends JpaRepository<Jobs, Integer> {
 
-	@Query("from com.ors.model.Jobs where jobtitle=:jobtitle")
+	@Query("from com.ors.model.Jobs where jobtitle Like %:jobtitle%")
 	public List<Jobs> findByTitle(String jobtitle);
 
 }

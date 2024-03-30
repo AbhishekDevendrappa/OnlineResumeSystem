@@ -114,7 +114,7 @@ label {
 </head>
 <body>
 <div class="toolbar">
-		<h1>Welcome To Online Resume System</h1>
+		<h1>Jobs.Com</h1>
 		<h2>${um}</h2>
 		<a href="back1"><button type="submit">Back</button></a>
 		<a href="loglout"><button type="submit">Logout</button></a>

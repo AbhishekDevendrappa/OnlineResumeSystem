@@ -5,7 +5,6 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 import com.ors.model.User;
-import com.ors.service.userService;
 @Repository
 public interface Userrepo extends CrudRepository<User ,Integer> {
      

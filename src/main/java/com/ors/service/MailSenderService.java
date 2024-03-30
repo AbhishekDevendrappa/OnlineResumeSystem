@@ -32,5 +32,4 @@ public class MailSenderService {
 		javaMailSender.send(message);
 		System.out.println("Mail Sent successfully...");
 	}
-
 }

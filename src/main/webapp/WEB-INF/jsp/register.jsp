@@ -84,7 +84,7 @@ function add(username) {
 <body>
 
 	<div class="toolbar">
-		<h1>Welcome To Online Resume System</h1>
+		<h1>Welcome To Jobs.Com</h1>
 		<a href="gohome"><button type="submit">Home</button></a>
 	</div>
 	<div class="imgcontainer">

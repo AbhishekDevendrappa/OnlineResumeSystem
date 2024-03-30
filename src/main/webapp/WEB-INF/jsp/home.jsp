@@ -66,9 +66,11 @@ a {
 </head>
 <body  align="center">
  <div class="toolbar">
-    <h1>Online Resume System</h1>
-    <a href="register"><button type="submit">Register</button></a>
-	<a href="login"><button type="submit">Login</button></a>
+    <h1>Jobs.Com</h1>
+    
+    <a href="alogin"><button type="submit">Admin Login</button></a>
+	<a href="ulogin"><button type="submit">User Login</button></a>
+    
     
     </div>
 

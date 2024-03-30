@@ -79,27 +79,28 @@ img.avatar {
 }
 </style>
 </head>
-<body >
+<body>
 	<div class="toolbar">
-		<h1>Welcome To Online Resume System</h1>
+		<h1>Welcome To Jobs.Com</h1>
 		<a href="gohome"><button type="submit">Home</button></a>
+		<a href="register"><button type="submit">Register</button></a>
 	</div>
 
 	<div>
 		<form action="login" method="post">
 			<div class="imgcontainer">
-				<img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+				<img src="https://www.w3schools.com/howto/img_avatar2.png"
+					alt="Avatar" class="avatar">
 				<h2>JobSeeker Login</h2>
 				<h2>${errorMsg}</h2>
 			</div>
 
 
 			<div class="container">
-				<label><b>User name</b></label>
-				<input type="text" placeholder="Enter Username" name="Username" required> 
-				<label><b>Password</b></label>
-				<input type="password" placeholder="Enter Password" name="Password" required>
-
+				<label><b>User name</b></label> <input type="text"
+					placeholder="Enter Username" name="Username" required> <label><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="Password"
+					required> 
 				<button type="submit">Login</button>
 				<a href="forpass">Forgot Passwords</a>
 			</div>
